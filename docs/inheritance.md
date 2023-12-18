@@ -1,4 +1,4 @@
-# Inheritance
+# Inheritance - can't live without it
 Inheritance allows you to assign responsibility to another system.
 
 ## Overview
