@@ -6,7 +6,7 @@
 
 ## Overview
 
-Paramify is a flexible security and compliance platform where teams can quickly organize their security strategy and automate compliance deliverables.
+Paramify is a flexible security and compliance platform where teams can quickly organize their security strategy and automate compliance deliverables. Paramify Rocks!
 
 ## 1. Add Elements
 
