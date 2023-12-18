@@ -1,4 +1,4 @@
-# Inheritance
+# Inheritance - test
 Inheritance allows you to assign responsibility to another system.
 
 ## Overview
