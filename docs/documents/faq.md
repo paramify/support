@@ -118,7 +118,7 @@ Here’s why:
 #### Three ways to respond to control requirements:
 
 | Approach                                                     |                     Paramify Intake Only                  | Leveragin existing SSP | Intake + existing SSP |
-| ------------------------------------------------------------ | :--------------------------------------------------------: | :----------------: | :--------------: |
+| ------------------------------------------------------------ | :-------------------------------------------------------- | :---------------- | :-------------- |
 | Adopting Risk Solutions | After you complete the intake process, review your Risk Solutions with existing SSP in hand to add or modify context to those Risk Solutions that are specific to your environment |  | Populate Risk Solutions via intake then review in Paramify to evaluate best use of content as Custom Responses (project specific) or Risk Solutions (global). Modify control implementation statements by referencing existing SSP. |
 | Using Just Custom Responses  |  | Upload your existing SSP or copy and paste your own control implementation statements into Custom Responses for each control requirement |  |
 
@@ -151,7 +151,7 @@ What is a Risk Solution:
 
 #### Custom Response vs Risk Solutions
 | Paramify Feature                                                     |                     Risk Solution                    | Custom Response | Comments |
-| ------------------------------------------------------------ | :--------------------------------------------------------: | :----------------: | :--------------: |
+| ------------------------------------------------------------ | :-------------------------------------------------------- | :---------------- | :-------------- |
 | Response Mapping to Control Requirement | Global capabilities that can be mapped to multiple projects and multiple control requirements to minimize input and maximize deliverable outputs | Project and control requirement specific mapping |  |
 | Collaborator functionality (Solution Owners) | Capability or solution owner is given restricted access to view and/or edit their Risk Solutions as the approach or the people, places, and things change for the Risk Solution. The Review status is automatically updated to "Not reviewed" so the GRC Admin or ISSO can review the changes, make updates as needed, and mark the latest version of the Risk Solution as "Reviewed" | N/A |  |
 | Appendix A Generation | Each capability will have a distinct origination and implementation status. The overall control implementation status will be the least of all applicable Risk Solutions | Each custom response will have a distinct implementation status but can have multiple originations. The custom response should include all applicable originations or be comprehensive across custom responses. The overall control implementation status will be the least of all applicable custom responses |  |
