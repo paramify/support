@@ -137,27 +137,27 @@ What is a Risk Solution:
 
 1. Initial Intake based on Existing SSP
 
-- Perform self-served intake / SSP ingestion to define elements and Risk Solutions inventory from existing SSP
-- Import all elements and Risk Solutions inventory based on existing SSP into client's workspace
-- Apply suggested Risk Solutions produced from step #1 to list of all security objective catalog requirements
+   - Perform self-served intake / SSP ingestion to define elements and Risk Solutions inventory from existing SSP
+   - Import all elements and Risk Solutions inventory based on existing SSP into client's workspace
+   - Apply suggested Risk Solutions produced from step #1 to list of all security objective catalog requirements
 
 2. Defining Foundation for Security Capabilities
 
-- Assess what is necessary vs. superfluous in existing custom response to meet associated control requirement
-- Consolidate multi-component capability existing custom responses to a generic main component capability
-- Define the security capability key elements from existing custom response:
-  - Who - primary responsible owner of the capability
-    - Multiple Who scenarios:
-      - Partially inherited from a third party provider + Shared internal organizational ownership
-      - Customer responsibility + Shared internal organizational ownership"
-  - What - main component driving the capability (ideally this is owned by the Who party)
-  - How - procedures for implementing the capability (driven from the What element potentially in conjunction with other components)
-  - When - frequency with which the capability is performed
+   - Assess what is necessary vs. superfluous in existing custom response to meet associated control requirement
+   - Consolidate multi-component capability existing custom responses to a generic main component capability
+   - Define the security capability key elements from existing custom response:
+     - Who - primary responsible owner of the capability
+       - Multiple Who scenarios:
+         - Partially inherited from a third party provider + Shared internal organizational ownership
+         - Customer responsibility + Shared internal organizational ownership"
+     - What - main component driving the capability (ideally this is owned by the Who party)
+     - How - procedures for implementing the capability (driven from the What element potentially in conjunction with other components)
+     - When - frequency with which the capability is performed
 
 3. Content Merge to Risk Solutions Architecture (see proposed template to complete this phase here)
 
-- Refine suggested Risk Solutions created from the intake process based on outputs of phase #2 (custom responses and Risk Solutions can be viewed together in the controls implementation view as well as the Document Robot eMass deliverable)
-- Associate additional Risk Solutions not mapped to the requirement based on context from custom response not addressed in suggested Risk Solutions
+   - Refine suggested Risk Solutions created from the intake process based on outputs of phase #2 (custom responses and Risk Solutions can be viewed together in the controls implementation view as well as the Document Robot eMass deliverable)
+   - Associate additional Risk Solutions not mapped to the requirement based on context from custom response not addressed in suggested Risk Solutions
 
 #### Custom Response vs Risk Solutions
 
