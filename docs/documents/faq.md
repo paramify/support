@@ -119,7 +119,7 @@ Here’s why:
 
 | Approach                                                     |                     Paramify Intake Only                  | Leveragin existing SSP | Intake + existing SSP |
 | ------------------------------------------------------------ | :-------------------------------------------------------- | :---------------- | :-------------- |
-| Adopting Risk Solutions | After you complete the intake process, review your Risk Solutions with existing SSP in hand to add or modify context to those Risk Solutions that are specific to your environment |  | Populate Risk Solutions via intake then review in Paramify to evaluate best use of content as Custom Responses (project specific) or Risk Solutions (global). Modify control implementation statements by referencing existing SSP. |
+| Adopting Risk Solutions | After you complete the intake process, review your Risk Solutions with existing SSP in hand to add or modify context to those Risk Solutions that are specific to your environment |  | Populate Risk Solutions via intake and custom responses via ingestion or copy/paste then review in Paramify to evaluate best use of content as Custom Responses (project specific) or Risk Solutions (global). |
 | Using Just Custom Responses  |  | Upload your existing SSP or copy and paste your own control implementation statements into Custom Responses for each control requirement |  |
 
 #### Risk Solution Guiding Principles
@@ -131,23 +131,23 @@ What is a Risk Solution:
 
 #### Steps to Convert Custom / Existing Responses to Risk Solutions Architecture
 1. Initial Intake based on Existing SSP
-1a. Perform self-served intake / SSP ingestion to define elements and Risk Solutions inventory from existing SSP
-1b. Import all elements and Risk Solutions inventory based on existing SSP into client's workspace
-1c. Apply suggested Risk Solutions produced from step #1 to list of all security objective catalog requirements
+  + Perform self-served intake / SSP ingestion to define elements and Risk Solutions inventory from existing SSP
+  + Import all elements and Risk Solutions inventory based on existing SSP into client's workspace
+  + Apply suggested Risk Solutions produced from step #1 to list of all security objective catalog requirements
 2. Defining Foundation for Security Capabilities
-2a. Assess what is necessary vs. superfluous in existing custom response to meet associated control requirement
-2b. Consolidate multi-component capability existing custom responses to a generic main component capability
-2c. Define the security capability key elements from existing custom response:
-2c(1). Who - primary responsible owner of the capability
-"2c(1) Note - Multiple Who scenarios:
-1) Partially inherited from a third party provider + Shared internal organizational ownership
-2) Customer responsibility + Shared internal organizational ownership"
-2c(2). What - main component driving the capability (ideally this is owned by the Who party)
-2c(3). How - procedures for implementing the capability (driven from the What element potentially in conjunction with other components)
-2c(4). When - frequency with which the capability is performed
+  + Assess what is necessary vs. superfluous in existing custom response to meet associated control requirement
+  + Consolidate multi-component capability existing custom responses to a generic main component capability
+  + Define the security capability key elements from existing custom response:
+    - Who - primary responsible owner of the capability
+      * Multiple Who scenarios:
+        + Partially inherited from a third party provider + Shared internal organizational ownership
+        + Customer responsibility + Shared internal organizational ownership"
+    - What - main component driving the capability (ideally this is owned by the Who party)
+    - How - procedures for implementing the capability (driven from the What element potentially in conjunction with other components)
+    - When - frequency with which the capability is performed
 3. Content Merge to Risk Solutions Architecture (see proposed template to complete this phase here)
-3a. Refine suggested Risk Solutions created from the intake process based on outputs of phase #2 (custom responses and Risk Solutions can be viewed together in the controls implementation view as well as the Document Robot eMass deliverable)
-3b. Associate additional Risk Solutions not mapped to the requirement based on context from custom response not addressed in suggested Risk Solutions
+  + Refine suggested Risk Solutions created from the intake process based on outputs of phase #2 (custom responses and Risk Solutions can be viewed together in the controls implementation view as well as the Document Robot eMass deliverable)
+  + Associate additional Risk Solutions not mapped to the requirement based on context from custom response not addressed in suggested Risk Solutions
 
 #### Custom Response vs Risk Solutions
 | Paramify Feature                                                     |                     Risk Solution                    | Custom Response | Comments |
