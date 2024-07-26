@@ -25,6 +25,47 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.36.0 (July 26, 2024)
+
+### Improvements
+
+- Documents: Added option to regenerate the latest revision
+- Documents: Include custom sections from Project Overview in generated SSP
+- Documents: Renamed references of "Document Robot" to "Documents"
+- Elements: Added "Create New" button on detail view for quicker additions
+- Elements: Added ability to convert an Element to a different type
+- Elements: Added warning with number of mentions when deleting Elements
+- Elements: Improved icons to better differentiate between Roles
+- Issues: Added option to replace existing Issues on import
+- Projects: Added option to retain Custom Responses when deselecting controls
+- Projects: Initial support for importing SSP (or Appendix A) for FedRAMP
+- Projects: Support for level-specific limits when setting security impact
+- Risk Solutions: Added ability to multi-select profiles to filter on summary page
+- Risk Solutions: Added control family, compliance profile, and requirement to filters
+- Risk Solutions: Added flag for Main Component implementation mismatch
+- Risk Solutions: Added previous/next navigation buttons on detail view
+- Risk Solutions: Moved mappings into right drawer for easier comparison
+- UI: Added visible "Alpha" and "Beta" flags on specific features
+- Fixed Attachments to more clearly indicate which can be automaticially generated
+- Fixed Attachments to properly save and view Comments in Activity
+- Fixed Documents revision Activity to indicate SSP vs POAM changes
+- Fixed Elements import from causing an error with certain existing data
+- Fixed Glossary and Acronyms from being visibile in other workspaces
+- Fixed Glossary and Acronyms to ignore capitalization when sorting
+- Fixed Issues import warnings to distinguish between failed rows and missing fields
+- Fixed Issues to show consistent dates regardless of timezone
+- Fixed Projects migration from FedRAMP Rev4 to keep relevant Custom Responses
+
+### Deployments
+
+- Initial support for deployment to Google Cloud
+- Enable deployment using new version of Embedded Cluster (beta)
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.35.0 (July 9, 2024)
 
 ### Improvements
