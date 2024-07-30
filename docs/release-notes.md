@@ -29,9 +29,9 @@ Once the release notes are approved and merged then notification should be sent 
 
 ### Improvements
 
+- Attachments: Show blue robot icon on each attachment with autogeneration enabled
 - Documents: Added option to regenerate the latest revision
 - Documents: Include custom sections from Project Overview in generated SSP
-- Documents: Renamed references of "Document Robot" to "Documents"
 - Elements: Added "Create New" button on detail view for quicker additions
 - Elements: Added ability to convert an Element to a different type
 - Elements: Added warning with number of mentions when deleting Elements
@@ -52,9 +52,12 @@ Once the release notes are approved and merged then notification should be sent 
 - Fixed Elements import from causing an error with certain existing data
 - Fixed Glossary and Acronyms from being visibile in other workspaces
 - Fixed Glossary and Acronyms to ignore capitalization when sorting
+- Fixed Issues from clearing origination when editing options on right sidebar
 - Fixed Issues import warnings to distinguish between failed rows and missing fields
 - Fixed Issues to show consistent dates regardless of timezone
 - Fixed Projects migration from FedRAMP Rev4 to keep relevant Custom Responses
+- Fixed Projects to only allow creating DOD addendum on FedRAMP base projects
+- Fixed Risk Solutions view to properly filter by Responsible Role
 
 ### Deployments
 
