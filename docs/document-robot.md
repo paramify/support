@@ -23,6 +23,24 @@ Once the package is ready, you can download the zip file by clicking on the 'Dow
 
 <YouTube src="https://www.youtube.com/embed/UkZqJWuZb7E?si=mAgjPDAC9O4p6S0s"/>
 
+## Importing revision history
+A historical SSP revision history prior to automating your SSP in Paramify can be imported as follows in Document Robot to ensure a complete revision history is captured in your Paramify generated documents:
+1. Create a CSV with the revision history using the format shown in the table below
+2. Click "Import Revision History"
+3. Click "Choose File..." and select the CSV revision history file
+4. Click "Submit"
+The imported revision history will appear in the Document Robot page. Refresh the page if the revision history doesn't appear right away.
+
+::: tip NOTE
+Deliverables are not available for download for the revisions imported because the historical packages are not stored in Paramify.
+:::
+
+#### CSV Format to "Import Revision History"
+| Date | Description | Version | Author |
+| ---------- | ------------------------------ | ------ | ------------------------------ |
+| 1/2/2020 | First Draft | 1.0.0 | Author Name |
+
+
 ## SSP Appendix A
 Document Robot automatically creates Appendix A in seconds, presenting the information in a clear, well-organized manner. Examples can be seen in the following video:
 
