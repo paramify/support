@@ -149,7 +149,7 @@ What is a Risk Solution:
      - Who - primary responsible owner of the capability
        - Multiple Who scenarios:
          - Partially inherited from a third party provider + Shared internal organizational ownership
-         - Customer responsibility + Shared internal organizational ownership"
+         - Customer responsibility + Shared internal organizational ownership
      - What - main component driving the capability (ideally this is owned by the Who party)
      - How - procedures for implementing the capability (driven from the What element potentially in conjunction with other components)
      - When - frequency with which the capability is performed
