@@ -25,6 +25,29 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.37.0 (August 8, 2024)
+
+### Improvements
+
+- Risk Solutions: Added ability to assign Reviewer and "changes requested" status
+- Teams: Allow assigning Teams to Elements and Risk Solutions to simplify grouping
+- Workspaces: Added option to limit what Collaborators can review
+- Fixed Documents for FedRAMP Appendix A to drop section in table number caption
+- Fixed Documents generation to give warning if images are missing
+- Fixed Documents to include revision number in package filename
+- Fixed Documents to more consistently indent body text
+- Fixed Elements from showing a 400 error after editing certain fields
+- Fixed Issues import of invalid files from potentially crashing application
+- Fixed Risk Solutions dashboard links to properly apply filters
+- Fixed Risk Solutions flag for "potential duplicate" to include manually copied
+- Fixed Risk Solutions to filter for specific attributes not being set
+- Fixed Risk Solutions to show flag when imported with invalid Mentions
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.36.0 (July 26, 2024)
 
 ### Improvements
@@ -52,6 +75,7 @@ Once the release notes are approved and merged then notification should be sent 
 - Fixed Elements import from causing an error with certain existing data
 - Fixed Glossary and Acronyms from being visibile in other workspaces
 - Fixed Glossary and Acronyms to ignore capitalization when sorting
+- Fixed Imports of too large files not giving a useful warning message
 - Fixed Issues from clearing origination when editing options on right sidebar
 - Fixed Issues import warnings to distinguish between failed rows and missing fields
 - Fixed Issues to show consistent dates regardless of timezone
