@@ -103,7 +103,7 @@ If you are converting legacy documentation into custom control responses, you ca
 
 ::: details Is there a FedRAMP Template for Appendix R: Separation of Duties Matrix?
 
-Guidance: The focus is typically on privileged and not-privileged access.  You will see that no logical access roles are not included in the example below.  However, you can include no logical access roles as well.
+**Note:** The focus is typically on privileged and not-privileged access so, for the purpose of the example below, no logical access roles are not included.
 
 #### Example: Separation of Duties Matrix
 
