@@ -107,7 +107,7 @@ If you are converting legacy documentation into custom control responses, you ca
 
 #### Example: Separation of Duties Matrix
 
-The following table outlines the separation of duties for user roles within the FedRAMP System Name cloud environment.  The table is categorized by a user’s role, whether he/she is an internal employee or external entity such as a contractor, the user’s functions, and the level of access granted to the system. 
+The following table outlines the separation of duties for user roles within the *FedRAMP System Name* cloud environment.  The table is categorized by a user’s role, whether he/she is an internal employee or external entity such as a contractor, the user’s functions, and the level of access granted to the system. 
 
 | Role | Internal or External	| Functions Performed |	Development Environment Access | Production Environment Access | Network Log Access | Security Log Access |
 |------|---------------|------------------------------------|:----------------------:|:-----------------------------:|:------------------:|:-------------------:|
