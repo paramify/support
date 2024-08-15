@@ -103,7 +103,7 @@ If you are converting legacy documentation into custom control responses, you ca
 
 ::: details Is there a FedRAMP Template for Appendix R: Separation of Duties Matrix?
 
-**Note:** The focus is typically on privileged and not-privileged access so, for the purpose of the example below, no logical access roles are not included.
+Last check on the [Fedramp Documents & Templates](https://www.fedramp.gov/documents-templates/) page, FedRAMP does NOT have a template for Separation of Duties Matrix.  Here is an example for your reference:
 
 #### Example: Separation of Duties Matrix
 
@@ -116,6 +116,8 @@ The following table outlines the separation of duties for user roles within the 
 | Non-Admin User |	Internal	| Read-Only Access to Dashboards	| No	| No	| No	| No |
 | Customer Admin	| External | Application Administrator on Customer Instance |	No |	No	| Yes | Yes |
 | Non-Admin Customer User |	External |	Set by Customer Admin |	No	| No |	No |	No |
+
+**Note:** The focus is typically on privileged and not-privileged access so, for the purpose of the example above, no logical access roles are not included.
 
 :::
 
