@@ -37,7 +37,6 @@ Once the release notes are approved and merged then notification should be sent 
 - Risk Solutions: New ability to assign a reviewer and add resolvable comments
 - Fixed Documents to allow Regenerate option if there was an error during generation
 - Fixed Elements export then import from having an error under some conditions
-- Fixed Issues import to handle various data problems more gracefully
 - Fixed Issues to avoid rare crash when editing Remediation text or closing an Issue
 - Fixed Parameters crash switching projects after setting "Show DoD Settings" flag
 - Fixed Projects migrate to FedRAMP Rev 5 to include responsible role of Custom Responses
