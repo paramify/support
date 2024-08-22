@@ -25,6 +25,31 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.38.0 (August 21, 2024)
+
+### Improvements
+
+- Controls Implementation: Added option to download controls matrix as CSV
+- Custom Responses: Option to "Find Elements" in text and convert to Mentions (alpha)
+- Risk Solutions: Added filter option for "Assigned Reviewer"
+- Risk Solutions: Added option to show full control text when adjusting mappings
+- Risk Solutions: Multi-select with bulk actions to assign reviewers or mark reviewed
+- Risk Solutions: New ability to assign a reviewer and add resolvable comments
+- Fixed Documents to allow Regenerate option if there was an error during generation
+- Fixed Elements export then import from having an error under some conditions
+- Fixed Issues import to handle various data problems more gracefully
+- Fixed Issues to avoid rare crash when editing Remediation text or closing an Issue
+- Fixed Parameters crash switching projects after setting "Show DoD Settings" flag
+- Fixed Projects migrate to FedRAMP Rev 5 to include responsible role of Custom Responses
+- Fixed Projects to show correct status for Project Overview sections with diagrams
+- Fixed Risk Solutions export from having Mentions showing as "undefined"
+- Fixed Risk Solutions to prevent an error due to too long of a title
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.37.0 (August 8, 2024)
 
 ### Improvements
