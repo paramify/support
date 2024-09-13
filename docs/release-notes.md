@@ -25,6 +25,101 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.39.0 (September 10, 2024)
+
+### Improvements
+
+- Controls Implementation: Added view toggle and list view with selectable columns
+- Controls Implementation: Updated design of detail view including Reviewer details
+- Custom Responses: AI-suggested Risk Solutions based on Custom Responses (alpha)
+- Documents: Initial generation of FedRAMP Appendix Q from related data flows
+- Elements: New list view with initial filters and selectable columns
+- Elements: Updated design of detail view including Data Flows and Reviewer details
+- Mentions: Added ability to click on a Mention and unlink it (back to plain text)
+- Projects: Include Front Matter in SSP and Appendix A imports (beta)
+- Projects: Early support for Adobe Common Controls Framework (CCF) projects for SOC2
+- Projects: Updated StateRAMP to support Rev 5 controls
+- Risk Solutions: Added option to copy project mappings when duplicating a Risk Solution
+- Fixed Controls Implementation to show tooltip with Reviewer of linked Risk Solutions
+- Fixed Controls Selection when viewing Controls to properly show System Name
+- Fixed Custom Responses error when setting Originations and Responsible Roles
+- Fixed Custom Responses export of Control Implementations to include missing header
+- Fixed Custom Responses so "Add Mentions" can fix invalid mentions of matching names
+- Fixed Custom Responses to allow setting family when saving as a Risk Solution
+- Fixed Custom Responses with global option to toggle titles in Project Settings
+- Fixed Documents for Appendix A so Origination Status order matches FedRAMP template
+- Fixed Documents to include headings and table of contents for custom sections
+- Fixed Documents to properly show Organization when mentioned in system description
+- Fixed Elements detail view to properly navigate when the list is filtered
+- Fixed Exports to be properly restricted based on Project licensing
+- Fixed Images support in Azure Government related to bug in Azure client
+- Fixed Issues to avoid potential error when reopening an issue with remarks
+- Fixed Key Contacts problem when trying to create entries directly in selector
+- Fixed Login to ignore case when matching user email addresses
+- Fixed Login to use UPN from Azure AD with Microsoft Login instead of email address
+- Fixed Projects dashboard progress to ignore Review Status for Custom Responses
+- Fixed Projects error viewing System Ports, Protocols & Services in Project Overview
+- Fixed Projects changes to user counts from resetting selections in User Summary
+- Fixed Projects so User Summary can properly show completed in Project Overview
+- Fixed Projects to show proper base project Impact Level on DoD projects
+- Fixed Risk Solutions import/export to included assigned Reviewer and Review Status
+- Fixed Risk Solutions list view with selectable columns and sort options
+- Fixed Risk Solutions to flag mismatched Teams compared to the Main Component
+- Fixed Risk Solutions to honor filters when using multi-select
+- Fixed UI to prevent potential error when selected User was removed from Workspace
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
+## 1.38.0 (August 21, 2024)
+
+### Improvements
+
+- Controls Implementation: Added option to download controls matrix as CSV
+- Custom Responses: Option to "Create Elements" in text and convert to Mentions (alpha)
+- Risk Solutions: Added filter option for Assigned Reviewer
+- Risk Solutions: Added option to show full control text when adjusting mappings
+- Risk Solutions: Multi-select with bulk actions to assign reviewers or mark reviewed
+- Risk Solutions: New ability to assign a reviewer and add resolvable comments
+- Fixed Documents to allow Regenerate option if there was an error during generation
+- Fixed Elements export then import from having an error under some conditions
+- Fixed Issues to avoid rare crash when editing Remediation text or closing an Issue
+- Fixed Parameters crash switching projects after setting "Show DoD Settings" flag
+- Fixed Projects migrate to FedRAMP Rev 5 to include responsible role of Custom Responses
+- Fixed Projects to show correct status for Project Overview sections with diagrams
+- Fixed Risk Solutions export from having Mentions showing as "undefined"
+- Fixed Risk Solutions to prevent an error due to too long of a title
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
+## 1.37.0 (August 8, 2024)
+
+### Improvements
+
+- Risk Solutions: Added ability to assign Reviewer and "changes requested" status
+- Teams: Allow assigning Teams to Elements and Risk Solutions to simplify grouping
+- Workspaces: Added option to limit what Collaborators can review
+- Fixed Documents for FedRAMP Appendix A to drop section in table number caption
+- Fixed Documents generation to give warning if images are missing
+- Fixed Documents to include revision number in package filename
+- Fixed Documents to more consistently indent body text
+- Fixed Elements from showing a 400 error after editing certain fields
+- Fixed Issues import of invalid files from potentially crashing application
+- Fixed Risk Solutions dashboard links to properly apply filters
+- Fixed Risk Solutions flag for "potential duplicate" to include manually copied
+- Fixed Risk Solutions to filter for specific attributes not being set
+- Fixed Risk Solutions to show flag when imported with invalid Mentions
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.36.0 (July 26, 2024)
 
 ### Improvements
@@ -52,6 +147,7 @@ Once the release notes are approved and merged then notification should be sent 
 - Fixed Elements import from causing an error with certain existing data
 - Fixed Glossary and Acronyms from being visibile in other workspaces
 - Fixed Glossary and Acronyms to ignore capitalization when sorting
+- Fixed Imports of too large files not giving a useful warning message
 - Fixed Issues from clearing origination when editing options on right sidebar
 - Fixed Issues import warnings to distinguish between failed rows and missing fields
 - Fixed Issues to show consistent dates regardless of timezone

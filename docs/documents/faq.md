@@ -99,6 +99,28 @@ If you are converting legacy documentation into custom control responses, you ca
 
 :::
 
+### Appendix R
+
+::: details Is there a FedRAMP Template for Appendix R: Separation of Duties Matrix?
+
+Last check on the [Fedramp Documents & Templates](https://www.fedramp.gov/documents-templates/) page, FedRAMP does NOT have a template for Separation of Duties Matrix.  Here is an example for your reference:
+
+#### Example: Separation of Duties Matrix
+
+The following table outlines the separation of duties for user roles within the *FedRAMP System Name* cloud environment.  The table is categorized by a user’s role, whether he/she is an internal employee or external entity such as a contractor, the user’s functions, and the level of access granted to the system. 
+
+| Role | Internal or External	| Functions Performed |	Development Environment Access | Production Environment Access | Network Log Access | Security Log Access |
+|------|---------------|------------------------------------|:----------------------:|:-----------------------------:|:------------------:|:-------------------:|
+| Admin User |	Internal |	Full administrative access (root) |	Yes | Yes |	Yes |	Yes |
+| Developer |	Internal	| Development	| Yes |	No |	No |	No |
+| Non-Admin User |	Internal	| Read-Only Access to Dashboards	| No	| No	| No	| No |
+| Customer Admin	| External | Application Administrator on Customer Instance |	No |	No	| Yes | Yes |
+| Non-Admin Customer User |	External |	Set by Customer Admin |	No	| No |	No |	No |
+
+**Note:** The focus is typically on privileged and not-privileged access so, for the purpose of the example above, no logical access roles are not included.
+
+:::
+
 ## Leveraging my existing SSP
 
 :::details How can I leverage my existing SSP with Paramify?
