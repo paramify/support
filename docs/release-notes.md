@@ -25,13 +25,61 @@ Once the release notes are approved and merged then notification should be sent 
 ![paramify](/assets/hero-rocket.png)
 
 
+## 1.39.0 (September 10, 2024)
+
+### Improvements
+
+- Controls Implementation: Added view toggle and list view with selectable columns
+- Controls Implementation: Updated design of detail view including Reviewer details
+- Custom Responses: AI-suggested Risk Solutions based on Custom Responses (alpha)
+- Documents: Initial generation of FedRAMP Appendix Q from related data flows
+- Elements: New list view with initial filters and selectable columns
+- Elements: Updated design of detail view including Data Flows and Reviewer details
+- Mentions: Added ability to click on a Mention and unlink it (back to plain text)
+- Projects: Include Front Matter in SSP and Appendex A imports (beta)
+- Projects: Initial support for Adobe Common Controls Framework (CCF) projects for SOC2
+- Projects: Updated StateRAMP to support Rev 5 controls
+- Risk Solutions: Added option to copy project mappings when duplicating a Risk Solution
+- Fixed Controls Implementation to show tooltip with Reviewer of linked Risk Solutions
+- Fixed Controls Selection when viewing Controls to properly show System Name
+- Fixed Custom Responses error when setting Originations and Responsible Roles
+- Fixed Custom Responses export of Control Implementations to include missing header
+- Fixed Custom Responses so "Add Mentions" will fix invalid mentions with matching names
+- Fixed Custom Responses to allow setting family when saving as a Risk Solution
+- Fixed Custom Responses with global option to toggle titles in Project Settings
+- Fixed Documents for Appendix A so order of origination status matches FedRAMP template
+- Fixed Documents to include headings and table of contents entries for custom sections
+- Fixed Documents to properly show Organization when mentioned in system description
+- Fixed Elements detail view to properly navigate when the list is filtered
+- Fixed Exports to be properly restricted based on Project licensing
+- Fixed Images support in Azure Government related to bug in Azure client
+- Fixed Issues from potential error when reopening an issue with remarks
+- Fixed Key Contacts problem when trying to create entries directly in selector
+- Fixed Login to ignore case when matching user email addresses
+- Fixed Login to use UPN from Azure AD with Microsoft Login instead of email address
+- Fixed Projects dashboard progress to ignore Review Status for Custom Responses
+- Fixed Projects error viewing System Ports, Protocols & Services in Project Overview
+- Fixed Projects so changes to user counts in User Summary won't reset manual selections
+- Fixed Projects so User Summary can properly show completed in Project Overview
+- Fixed Projects to show proper base project Impact Level on DoD projects
+- Fixed Risk Solutions import/export to included assigned Reviewer and Review Status
+- Fixed Risk Solutions list view with selectable columns and sort options
+- Fixed Risk Solutions to flag mismatched Teams compared to the Main Component
+- Fixed Risk Solutions to honor filters when using multi-select
+- Fixed UI to prevent potential error when selected User was removed from Workspace
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
+
 ## 1.38.0 (August 21, 2024)
 
 ### Improvements
 
 - Controls Implementation: Added option to download controls matrix as CSV
-- Custom Responses: Option to "Find Elements" in text and convert to Mentions (alpha)
-- Risk Solutions: Added filter option for "Assigned Reviewer"
+- Custom Responses: Option to "Create Elements" in text and convert to Mentions (alpha)
+- Risk Solutions: Added filter option for Assigned Reviewer
 - Risk Solutions: Added option to show full control text when adjusting mappings
 - Risk Solutions: Multi-select with bulk actions to assign reviewers or mark reviewed
 - Risk Solutions: New ability to assign a reviewer and add resolvable comments
