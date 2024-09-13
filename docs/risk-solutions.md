@@ -68,3 +68,7 @@ If a Risk Solution almost meets your needs but not quite, Paramify provides the 
 ## Risk Solution Generation
 
 Paramify is introducing a new opt-In Risk Solution generation tool that is built with Llama to offer suggestions for creating Risk Solutions from your Custom Responses (control requirement specific response). To opt-in contact your client success representative or our sales team [here.](https://www.paramify.com/contact-us) We do not use any of your data to train the model. The Risk Solution generation tool is self-hosted to prevent Third Party access and to establish a secure environment.
+
+## Element Generation
+
+Paramify is introducing a new opt-In Element generation tool that is built with Llama to offer suggestions for potenmtial Elements that are found in your Risk Solutions or Custome Responses (control requirement specific response). To opt-in contact your client success representative or our sales team [here.](https://www.paramify.com/contact-us) We do not use any of your data to train the model. The Element Generation generation tool is self-hosted to prevent Third Party access and to establish a secure environment.
