@@ -64,11 +64,3 @@ If a Risk Solution almost meets your needs but not quite, Paramify provides the 
   3. A unique Risk Solution is created in the library linked exclusively to your project requirement. Your tailored Risk Solution is reusable to map to other relevant controls across projects.
 
 <YouTube src="https://www.youtube.com/embed/geDlTsawTQ0?si=cl1ZVPC96etRHIGT"/>
-
-## Risk Solution Generation
-
-Paramify is introducing a new opt-In Risk Solution generation tool that is built with Llama (an AI model) to offer suggestions for creating Risk Solutions from your Custom Responses (control requirement specific response). To opt-in contact your client success representative or our sales team [here](https://www.paramify.com/contact-us). We do not use any of your data to train the model nor do we retain your data for future processing. We do not process your data without yopu explicitly executing AI-specific features. The Risk Solution generation tool is hosted entirely in Paramify Cloud to prevent third party access and to establish a secure environment.
-
-## Element Generation
-
-Paramify is introducing a new opt-In Element generation tool that is built with Llama (an AI model) to offer suggestions for potential Elements that are found in your Risk Solutions or Custome Responses (control requirement specific response). To opt-in contact your client success representative or our sales team [here](https://www.paramify.com/contact-us). We do not use any of your data to train the model nor do we retain your data for future processing. We do not process your data without yopu explicitly executing AI-specific features. The Element Generation generation tool is hosted entirely in Paramify Cloud to prevent third party access and to establish a secure environment.
