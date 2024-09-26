@@ -16,3 +16,5 @@ Rev5 controls do not map 1:1 to Rev4 controls. Therefore, it's imperative that y
 5. A new Rev5 project copy will be created.
 
 Depending on the options you selected, you may need to go reapply parameter settings and apply suggested Risk Solutions.
+
+Custom Responses can now be migrated from Rev 4 to Rev 5 FedRAMP projects. Paramify has built in the control mapping changes from Rev 4 to Rev 5 to perform the migration systematically. New control requirements for Rev 5 can be quickly addressed leveraging Risk Solutions or creating new custom responses.
