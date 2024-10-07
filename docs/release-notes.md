@@ -24,6 +24,45 @@ Once the release notes are approved and merged then notification should be sent 
 
 ![paramify](/assets/hero-rocket.png)
 
+## 1.40.0 (October 7, 2024)
+
+### Improvements
+
+- Controls: Added additional requirements and guidance information to control descriptions
+- Projects: Continued improvements for CCF support for SOC 2
+- Projects: Added early support for FISMA catalogs (Beta)
+- Risk Solution: Added ability to apply suggested mappings to a project in the mapping view
+- Control Implementation: Improved warnings on invalid data
+- Elements: Added multi-select to list view
+
+### Fixes
+
+- Mentions: Fixed issue causing mentions to be broken until browser refresh
+- Documents: Fixed nested bullets formatting issues
+- Documents: Fixed “Used by” column in Ports, Protocols, and Services table showing unexpected output
+- Documents: Fixed CIS to list by control requirement instead of by control
+- Documents: Fixed “Organization Name” mentions not being display properly
+- Documents: Fixed some attachments not being properly listed
+- Workspace Settings: Okta tooltip now points to up to date documentation in http://docs.paramify.com 
+- Project Overview: Corrected issue causing user summary to log too many interactions
+- Project Overview: System Interconnection names no longer display the 'invalid type' tooltip on hover
+- Project Overview: Fixed issue preventing access of “System Ports, Protocols & Services” page
+- List Views: Fixed issue with next and back navigation buttons not always respecting filters on detail pages
+- Elements: Fixed permissions issues for deleting elements
+- SSO: Fixed Okta users not getting redirected when already logged in
+- Risk Solutions: Fixed issue with showing incorrect review status
+- Imports: Improved warnings when handling review data
+- Imports: Fixed review content not being included in element imports and exports
+- Imports: Improve import handling for manual updated element records
+
+### Deployment
+
+Added configuration option to enable services to connect to FIPS-compliant endpoints in AWS.
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
 
 ## 1.39.0 (September 10, 2024)
 
