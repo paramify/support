@@ -24,6 +24,43 @@ Once the release notes are approved and merged then notification should be sent 
 
 ![paramify](/assets/hero-rocket.png)
 
+## 1.41.0 (October 23, 2024)
+
+### Improvements
+
+- Controls: Implemented page load performance improvements
+- Controls: Added flag to identify controls with invalid mentions 
+- Controls: Added ‘Apply suggested Risk Solution to selected controls’ bulk action
+- Data Flows: Added option for data flow import and export
+- Documents: Add auto increment of version number to document generation through Document Robot
+- Elements: Added the ability to bulk change team, responsible role, status, vendor, and leveraged systems
+- Elements: Added ability to filter by additional criteria
+- POAMs: Added notice to user when closing issue with open milestones
+- Projects: Continued improvements for CCF projects including custom control language
+- Risk Solutions: Improved speed of Risk Solution import
+- Risk Solutions: Added the ability to bulk change team, origination, main component, implementation, target date, and remarks
+
+### Fixes
+
+- Attachments: Fixed duplicate attachments on StateRAMP projects
+- Controls: Fixed capitalization of elements and mentions
+- Document Robot: Fixed issue with FedRAMP Li-SaaS Rev 5 producing incomplete templates
+- Data Flows: Removed redundant fields
+- Elements: Fixed IP and DNS fields appearing as drop down list when adding an inventory item
+- POAMs: Improved various issues when importing POAMs
+- POAMs: Fixed various formatting issues
+- Risk Solutions: Removed unnecessary project-mappings columns
+- Risk Solutions: Fixed prompt that suggested creating a duplicate main component
+- Risk Solutions: Fixed filter counts to always show the count and total 
+
+### Deployment
+
+- Reduced container start-up time
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended.
+
 ## 1.40.0 (October 7, 2024)
 
 ### Improvements
