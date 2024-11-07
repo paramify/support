@@ -24,6 +24,29 @@ Once the release notes are approved and merged then notification should be sent 
 
 ![paramify](/assets/hero-rocket.png)
 
+### Improvements
+
+- Bulk Action: Added confirmation when bulk actions were completed successfully
+- Data Flows: Allow more flexibility for source and destination components
+- Documents: Evidence files are now included with POA&M package
+- Issues: Added ability with Document Robot to generate a folder containing relevant evidence when producing POA&M documentation 
+- Navigation: Various improvements to reduce number of clicks throughout the app
+- Risk Solutions: Added the ability to bulk change team, origination, main component, implementation, target date, remarks
+
+### Fixes
+
+- Elements: Various bug fixes
+- Documents: Fixed Appendix Q not always printing component names
+- Documents: Improved Appendix Q table formatting
+- Projects: Fixed CMMC dashboard reporting incorrect SPRS score in edge cases
+- Risk Solutions: Fixed dashboard review percentage calculation when project contains custom responses
+- Rich Text: Fixed issue where invalid content could be copied and pasted between editors
+
+### Security
+
+- This release includes security-related dependency updates. Updating is recommended for all users.
+
+
 ## 1.41.0 (October 23, 2024)
 
 ### Improvements
