@@ -24,6 +24,9 @@ Once the release notes are approved and merged then notification should be sent 
 
 ![paramify](/assets/hero-rocket.png)
 
+
+## 1.42.0 (November 7, 2024)
+
 ### Improvements
 
 - Bulk Action: Added confirmation when bulk actions were completed successfully
@@ -41,10 +44,6 @@ Once the release notes are approved and merged then notification should be sent 
 - Projects: Fixed CMMC dashboard reporting incorrect SPRS score in edge cases
 - Risk Solutions: Fixed dashboard review percentage calculation when project contains custom responses
 - Rich Text: Fixed issue where invalid content could be copied and pasted between editors
-
-### Security
-
-- This release includes security-related dependency updates. Updating is recommended for all users.
 
 
 ## 1.41.0 (October 23, 2024)
