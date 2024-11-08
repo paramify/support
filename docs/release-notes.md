@@ -39,6 +39,8 @@ Once the release notes are approved and merged then notification should be sent 
 ### Fixes
 
 - Elements: Various bug fixes
+- Documents: CMMC controls are now ordered correctly in the SSP
+- Documents: CMMC projects now export OSCAL files as expected
 - Documents: Fixed Appendix Q not always printing component names
 - Documents: Improved Appendix Q table formatting
 - Projects: Fixed CMMC dashboard reporting incorrect SPRS score in edge cases
