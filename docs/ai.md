@@ -1,6 +1,6 @@
 # Paramify AI
 
-> Paramify allows opt-in for some AI features that will always protect your data
+> Paramify allows opt-in for AI features that will always protect your data
 
 ![paramify](/assets/hero-paramify.png)
 
