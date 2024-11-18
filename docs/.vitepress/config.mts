@@ -123,7 +123,7 @@ export default defineConfig({
           { text: "OSCAL", link: "/oscal" },
           { text: "Migrate to Rev5", link: "/migrate-fedramp" },
           { text: "FAQ by Document", link: "/documents/faq" },
-          { text: "AI at Paramify", link: "/ai" },
+          { text: "Paramify AI", link: "/ai" },
         ],
       },
     ],
