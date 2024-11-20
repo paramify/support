@@ -3,7 +3,7 @@
 
 The following instructions are an example of how to deploy the infrastructure and application into Fargate in AWS ECS.
 
-:::warn
+:::warning
 This deployment model is being evaluated for future official support.
 :::
 
@@ -79,9 +79,5 @@ Follow these steps to create the infrastructure and deploy the application:
         - In your domain create your DNS entry (e.g., paramify.mycompany.com) matching the SSL cert assigned to the loadbalancer
         - For "Record type" use "A" record then select "Alias"
         - Under "Route traffic to" choose "Alias to Application and Classic Load Balancer", your region, then select the entry for the LB hostname that was created
-
-    :::tip
-    The desired LB entry may start with "dualstack", such as "dualstack.abcdef0123456789abcdef1234567890-1234567890.us-west-2.elb.amazonaws.com."
-    :::
 
 Now you should be ready to access Paramify at the desired domain (e.g., https://paramify.mycompany.com) and login using one of your configured methods. Enjoy!
