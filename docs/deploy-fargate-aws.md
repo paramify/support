@@ -1,10 +1,10 @@
 # Deploy to Fargate (ECS) in AWS
-> Paramify can be deployed using Fargate in an Elastic Container Service (ECS) cluster in AWS
+> Paramify can be deployed using Fargate on Elastic Container Service (ECS) in AWS
 
 The following instructions are an example of how to deploy the infrastructure and application into Fargate in AWS ECS.
 
 :::warning
-This deployment model is being evaluated for future official support.
+This unofficial deployment model is being evaluated for potential future official support.
 :::
 
 ## Prerequisites
