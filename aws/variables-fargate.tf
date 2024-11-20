@@ -57,14 +57,12 @@ variable "ssl_cert" {
 
 variable "paramify_image" {
   description = "Container image to use for the Paramify application."
-  # default     = "proxy.paramify.com/proxy/paramify/041462616641.dkr.ecr.us-west-2.amazonaws.com/paramify:..."
-  default     = "041462616641.dkr.ecr.us-west-2.amazonaws.com/paramify:41ae0be@sha256:86212d976ba5b1f5beb6ec1e09f4f64426af0dfa96ead3ab0dc62c57b5023c20"
+  default     = "proxy.paramify.com/proxy/paramify/041462616641.dkr.ecr.us-west-2.amazonaws.com/paramify:..."
 }
 
 variable "docrobot_image" {
   description = "Container image to use for the Document Robot."
-  # default     = "proxy.paramify.com/proxy/paramify/041462616641.dkr.ecr.us-west-2.amazonaws.com/document-robot:..."
-  default     = "041462616641.dkr.ecr.us-west-2.amazonaws.com/document-robot:68596c7@sha256:ba4917c962c75f1cf6d45add8c78eef83aaab5ba1355b16b412c2948079a17a4"
+  default     = "proxy.paramify.com/proxy/paramify/041462616641.dkr.ecr.us-west-2.amazonaws.com/document-robot:..."
 }
 
 variable "cloudwatch_group" {
