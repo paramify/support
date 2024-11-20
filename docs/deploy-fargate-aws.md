@@ -49,7 +49,7 @@ Paramify will use the following infrastructure in AWS:
 - RDS PostgreSQL database
 - S3 bucket for generated documentation
 
-To simplify creation of the infrastructure you can use the example Terraform file [aws-paramify-ecs-fargate.tf](https://github.com/paramify/support/blob/main/aws-paramify-ecs-fargate.tf) to create everything in an isolated VPC. Be sure to update the [variables-fargate.tf](https://github.com/paramify/support/blob/main/variables-fargate.tf) according to your environment.
+To simplify creation of the infrastructure you can use the example Terraform file [aws-paramify-ecs-fargate.tf](https://github.com/paramify/support/blob/main/aws/aws-paramify-ecs-fargate.tf) to create everything in an isolated VPC. Be sure to update the [variables-fargate.tf](https://github.com/paramify/support/blob/main/aws/variables-fargate.tf) according to your environment.
 
 Follow these steps to create the infrastructure and deploy the application:
 1. Create an AWS SSL certificate for the desired subdomain (e.g., paramify.mycompany.com) in ACM
