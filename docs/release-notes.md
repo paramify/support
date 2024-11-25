@@ -24,6 +24,40 @@ Once the release notes are approved and merged then notification should be sent 
 
 ![paramify](/assets/hero-rocket.png)
 
+## 1.43.0 (November 25, 2024)
+
+### Improvements
+
+- Attachments: Custom attachments can now be reordered
+- Control Implementation: Issues can now be created directly from the control page
+- Control Implementation: Issues associated with controls can now be accessed from the control page
+- Control Implementation: Making changes on a control requirement resets the “reviewed” status
+- Comments: Filter various lists by whether comments are active or resolved
+- Crosswalk: Added beta functionality to generate crosswalk
+- Elements: Performance improvements
+- Elements: Changing an element name now warns of potential side effects
+- Issues: Revamped the issue creation flow
+- Issues: Uploading POA&M spreadsheet will automatically apply correct control parts to issues
+- Issues: The issue API now supports milestone CRUD functionality
+- Issues: Included link to CVSS calculator based upon associated CVE ID
+- Issues: Support for commenting, reviewing, and assigning
+- Project Overview: Custom sections can now be reordered
+- Risk Solution: Responsible roles can now be assigned through a bulk action
+- Documents: Improves readability of applicable services by listing them below the responses.
+
+### Fixes
+
+- Editor: The editor toolbar correctly locks to the top of the page when scrolling on multi-page content
+- Parameters: Multiple choice parameters now correctly display after making a selection
+- Risk Solutions: Mentions in lists will now parse correctly
+- Documents: Fixed leveraged services table to only show IaaS, PaaS, and SaaS services as per FedRAMP guidelines.
+- Control Implementation: Fixed issue where updating Control Requirements with active search filter caused page to crash and not update data if the requirement no longer matched the filter criteria.
+
+### Security
+
+- This release includes security-related dependency updates. Updating is recommended for all users.
+
+
 
 ## 1.42.0 (November 7, 2024)
 
