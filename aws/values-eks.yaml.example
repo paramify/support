@@ -8,7 +8,7 @@
 # Paramify main application endpoint (recommend DNS entry and SSL cert)
 services:
   paramify:
-    type: LoadBalancer  # optionally ClusterIP or NodePort
+    type: LoadBalancer  # optionally ClusterIP or NodePort (NOTE: For ALB see "ingresses" below)
     annotations:
       service.beta.kubernetes.io/aws-load-balancer-ssl-cert: "arn:aws:acm:<region>:<account_id>:certificate/<guid>"  # replace with your SSL cert
       service.beta.kubernetes.io/aws-load-balancer-ssl-ports: http
@@ -18,6 +18,37 @@ services:
       http:
         nodePort: null  # set preferred port (30000-32767) or null to autoassign
         port: 443
+
+# To optionally use an ALB, set above service type to ClusterIP and comment out all service annotations, then uncomment the following and customize
+# ingresses:
+#   paramify:
+#     enabled: true
+#     annotations:
+#       kubernetes.io/ingress.class: "alb"
+#       alb.ingress.kubernetes.io/load-balancer-name: "paramify-alb"
+#       alb.ingress.kubernetes.io/scheme: "internet-facing"  # or "internal"
+#       alb.ingress.kubernetes.io/target-type: "ip"
+#       alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
+#       alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:<region>:<account_id>:certificate/<guid>"  # replace with your SSL cert
+#       alb.ingress.kubernetes.io/ssl-policy: ELBSecurityPolicy-TLS13-1-2-FIPS-2023-04  # specify desired ssl policy
+#       alb.ingress.kubernetes.io/healthcheck-path: /health-check
+#       alb.ingress.kubernetes.io/healthcheck-port: traffic-port
+#       alb.ingress.kubernetes.io/healthcheck-protocol: HTTPS
+#       alb.ingress.kubernetes.io/healthcheck-interval-seconds: "10"
+#       alb.ingress.kubernetes.io/backend-protocol: HTTPS
+#       alb.ingress.kubernetes.io/load-balancer-attributes: idle_timeout.timeout_seconds=180
+#     hosts:
+#     - host: 'paramify.mycompany.com'
+#       paths:
+#       - path: /
+#         pathType: Prefix
+#         service:
+#           name: paramify
+#           port: 3000
+#     # tls:
+#     # - hosts:
+#     #   - 'paramify.mycompany.com'
+#     #   secretName: paramify-app-tls
 
 apps:
   admission:
