@@ -57,12 +57,27 @@ apps:
         env:
         - name: WHITELISTED_REGISTRIES
           value: "registry.paramify.com,proxy.paramify.com,ghcr.io,cgr.dev,kotsadm,minio,rqlite,openebs,602401143452.dkr.ecr.us-west-2.amazonaws.com"  # update the AWS domain for your region from https://docs.aws.amazon.com/eks/latest/userguide/add-ons-images.html
-# Optionally reference secret with custom SSL cert for container (data with tls.key/tls.cert)
+#         # For Helm airgap replace the images with your internal registry (and add your registry in the registries list above)
+#         image:
+#           repository: proxy.paramify.com/proxy/paramify/041462616641.dkr.ecr.us-west-2.amazonaws.com/admission
+#           tag: "abc123@sha256:abc123...abc123"
 #   paramify:
+#     containers:
+#       paramify:
+#         image:
+#           repository: proxy.paramify.com/proxy/paramify/041462616641.dkr.ecr.us-west-2.amazonaws.com/paramify
+#           tag: "abc123@sha256:abc123...abc123"
+#     # Optionally reference secret with custom SSL cert for container (data with tls.key/tls.cert)
 #     volumes:
 #     - name: paramify-secrets
 #       secret:
 #         secretName: paramify-custom-tls
+#   document-robot:
+#     containers:
+#       document-robot:
+#         image:
+#           repository: proxy.paramify.com/proxy/paramify/041462616641.dkr.ecr.us-west-2.amazonaws.com/document-robot
+#           tag: "abc123@sha256:abc123...abc123"
 
 # Custom environment configuration (replace <val> entries)
 configmaps:
@@ -85,7 +100,6 @@ configmaps:
       AUTH_OKTA_CLIENT_ID: "<guid>"
       AWS_STORAGE_BUCKET_NAME: "paramify-mycompany-s3"
       AWS_REGION: "<region>"
-      #CLOUDFRONT_DOMAIN: "<custom>.cloudfront.net"  # optionally specify a CloudFront domain, if used
   document-robot:
     data:
       STORAGE_PROVIDER: "AWSS3"
