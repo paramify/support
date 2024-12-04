@@ -78,6 +78,14 @@ apps:
 #         image:
 #           repository: proxy.paramify.com/proxy/paramify/041462616641.dkr.ecr.us-west-2.amazonaws.com/document-robot
 #           tag: "abc123@sha256:abc123...abc123"
+# # Optionally set the SDK image when using custom registry (for airgap)
+# replicated:
+#   isAirgap: true
+#   images:  # deprecated for "image" below with release 1.44.0
+#     replicated-sdk: replicated/replicated-sdk:abc123
+#   image:
+#     repository: "replicated/replicated-sdk"
+#     tag: "abc123"
 
 # Custom environment configuration (replace <val> entries)
 configmaps:
