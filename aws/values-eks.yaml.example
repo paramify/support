@@ -23,6 +23,7 @@ services:
 # ingresses:
 #   paramify:
 #     enabled: true
+#     ingressClassName: "alb"
 #     annotations:
 #       kubernetes.io/ingress.class: "alb"
 #       alb.ingress.kubernetes.io/load-balancer-name: "paramify-alb"
