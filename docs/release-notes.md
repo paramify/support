@@ -24,6 +24,47 @@ Once the release notes are approved and merged then notification should be sent 
 
 ![paramify](/assets/hero-rocket.png)
 
+## 1.44.0 (December 12, 2024)
+
+### Improvements
+
+- Control Implementation: Added filter flags for identifying problems
+- Control Implementation: Added option to download control implementations (CSV) for selected controls
+- Document Robot: Added OSCAL file to CMMC export
+- Elements: Added management details side panel displays implementation and assurance details
+- Elements: Added additional bulk change options to the following fields: target date and remarks
+- Import: Enhanced robustness allows successful file imports even when some table columns are missing
+- Issues: Enhanced text search of issues
+- Issues: Add additional filters, including: time frame, assigned, level, and others
+- Login: SAML now supports GCM
+- Project Dashboard: Return project progress widget to original liquid design
+- Projects: Move User Summary details from attachments to project overview section tab for FedRAMP Rev5
+- Projects: Added check to prevent deletion of projects with DoD dependencies
+- Risk Solutions: Added management details side panel displays implementation and assurance details
+- Risk Solutions: Added additional filter flags for identifying problems
+- Solution Responses: Enabled copying rich text for easy use in questionnaires and similar tasks
+- SSP Import: Better handling for AC-1 subparts
+
+### Fixes
+
+- Control Implementation: Fixed review status filter
+- Document Robot: Fixed order of CMMC requirements in the SSP document.
+- Documents: Fixed some rich text lists having the wrong format.
+- Documents: Fixed Leveraged Authorizations not displaying POC info in FedRAMP Rev4.
+- Deployments: Ensure air-gapped deployments use static element data
+- Elements: Fixed import activity missing fields.
+- Issues: Fixed bug where imports crashed due to invalid requirements
+- Mentions: Cleanup up orphaned mentions causing problems.
+- Projects: Updated the export file version.
+- Projects: Handle special characters in project name when exporting projects.
+- Risk Solutions: Fix broken mentions from duplicated solutions.
+- Risk Solutions: Fixes bug where resolved comments were unable to be reopened.
+- Risk Solutions: Remove “Shared” origination from bulk actions
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended for all users.
+
 ## 1.43.0 (November 25, 2024)
 
 ### Improvements
