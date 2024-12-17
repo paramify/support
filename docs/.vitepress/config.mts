@@ -97,6 +97,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Overview", link: "/login-options" },
+              { text: "Google SSO", link: "/login-google" },
               { text: "Microsoft SSO", link: "/login-microsoft" },
               { text: "Okta SSO", link: "/login-okta" },
             ],
