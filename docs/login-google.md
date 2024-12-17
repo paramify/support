@@ -14,9 +14,9 @@ Within the Google Cloud console you can setup an OAuth Client ID for Paramify to
 4. For the "Application type" choose _Web Application_
 4. Enter an appropriate name (e.g., Paramify SSO)
 5. Under _Authorized JavaScript origins_ click _+ ADD URI_ then enter the URL to access Paramify similar to the following:
-   https://paramify.mycompany.com
+   - https://paramify.mycompany.com
 6. Under _Authorized redirect URIs_ click _+ ADD URI_ then enter the same URL to access Paramify plus `/auth/callback`, such as:
-   https://paramify.mycompany.com/auth/callback
+   - https://paramify.mycompany.com/auth/callback
 7. Then click _CREATE_
 8. On the _OAuth Client created_ dialog copy the _Client ID_ and _Client secret_ for use later in configuration
 
