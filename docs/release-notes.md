@@ -24,6 +24,37 @@ Once the release notes are approved and merged then notification should be sent 
 
 ![paramify](/assets/hero-rocket.png)
 
+## 1.45.0 (January 8, 2024)
+
+### Improvements
+
+- Admin: Allow workspace admin to configure the allowed login methods for workspace(s)
+- Admin: Expanded current Okta-specific SAML implementation to support more generic SAML providers (e.g. Keycloack)
+- Control Implementation: Added “Find and Replace” feature for text content and mentions in Custom Responses
+- Documents: Improved styling in Li-SaaS CIS document
+- Documents: Improved Control Origination Selection, preventing redundant selections if origination is Service Provider Hybrid
+- Elements: Added bulk element delete which warns when elements that are mentioned will be deleted
+- General: The “Library” in now called “Resources”
+- Parameters: The Advanced Parameter Settings modal now navigates through parameter by parameter rather than skipping to the next control
+
+### Fixes
+- Control Implementation: Fixed issue where Custom Response to Risk Solution would cause Title to be grey
+- Control Implementation: Fixed issue where controls required in DoD ILs were not correctly marked as 'required' in the UI, also added some missing recommended parameters to DoD requirements
+- Documents: Fixed bug where document revision number wasn’t updating correctly
+- Documents: Fixed bug where leveraged authorizations on Custom Responses not explicitly selected in manual mode; Leveraged Authorizations section of Project Overview were not shown in SSP
+- Documents: Fixed bug where SSP would not generate if PM controls were selected in project.
+- Documents: Added missing FedRAMP Package ID and authorization type to FedRAMP Rev 5 SSP Leveraged Authorization table
+- Documents: Addressed issue with failure to generate SSPs in self-hosted, air-gapped environments
+- Elements: Fixed bulk action for changing target date on eligible components and locations
+- Projects: Fixed bug where importing of some FedRAMP Rev 4 SSPs would fail, improve the amount of data added to project from imported file
+- Projects: Fixed bug where migrating older FedRAMP Rev 4 projects to Rev 5 would cause crash, and some attachments were not generated correctly
+- Reviewers: Fixed an issue preventing users from being invited to the workspace through email
+- Risk Solutions: “Set Remarks” bulk action no longer breaks existing mentions on the affected Risk Solutions
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended for all users.
+
 ## 1.44.0 (December 12, 2024)
 
 ### Improvements
