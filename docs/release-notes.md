@@ -24,6 +24,21 @@ Once the release notes are approved and merged then notification should be sent 
 
 ![paramify](/assets/hero-rocket.png)
 
+## 1.46.0 (January 17, 2024)
+
+### Improvements
+
+- Alpha evidence and POA&M management functionality for limited audience
+- Control Implementation: Streamlined ability to bulk change target date
+- Stacks: Migrated Teams data to Stacks
+- StateRAMP: Updated SSP formatting
+
+### Fixes
+
+- Flags: Fixed various issues with flag management
+- Merge Request and Pull Requests
+- User Summary: Fixed issue with manual and auto mode
+
 ## 1.45.0 (January 8, 2024)
 
 ### Improvements
