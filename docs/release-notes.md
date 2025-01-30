@@ -29,7 +29,7 @@ Once the release notes are approved and merged then notification should be sent 
 ### Improvements
 
 - Alpha Evidence: Various improvements
-- Alpha POA&Ms: Various improements
+- Alpha POA&Ms: Various improvements
 - Control Implementation: Text search now includes additional fields
 - DocRobot: Improvements to make document creation more robust
 - Issues: Improvements to make import FedRAMP POA&M document functionality more robust
