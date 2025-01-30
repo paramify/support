@@ -24,6 +24,33 @@ Once the release notes are approved and merged then notification should be sent 
 
 ![paramify](/assets/hero-rocket.png)
 
+## 1.47.0 (January 30, 2024)
+
+### Improvements
+
+- Alpha Evidence: Various improvements
+- Alpha POA&Ms: Various improements
+- Control Implementation: Text search now includes additional fields
+- DocRobot: Improvements to make document creation more robust
+- Issues: Improvements to make import FedRAMP POA&M document functionality more robust
+- Project: Improvements to make import project files more robust
+- SSP: Improvement to include SSP revision number in file name
+- User profile: Allow Admins to change user email addresses
+
+### Fixes
+
+- Alpha Evidence: Various bug fixes
+- Alpha POA&Ms: Various bug fixes
+- CIS-CRM: Fixed issue where control enhancement was not always appearing
+- Generate Suggested Risk Solutions: Various fixes 
+- Risk Solutions: Fixed navigation issue
+- Smart Text Tool Tip: Fixed issue where captions were incorrectly marked as “not set”
+- User Summary: Fixed issue with manual and auto mode
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended for all users.
+
 ## 1.46.0 (January 17, 2024)
 
 ### Improvements
