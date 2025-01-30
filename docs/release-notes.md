@@ -29,10 +29,12 @@ Once the release notes are approved and merged then notification should be sent 
 ### Improvements
 
 - Alpha Evidence: Various improvements
+- Alpha Evidence: DocRobot can include evidence associated with controls in ATO package
 - Alpha POA&Ms: Various improvements
 - Control Implementation: Text search now includes additional fields
 - DocRobot: Improvements to make document creation more robust
 - Issues: Improvements to make import FedRAMP POA&M document functionality more robust
+- Issues: Provide ability to download filtered issues into CSV
 - Project: Improvements to make import project files more robust
 - SSP: Improvement to include SSP revision number in file name
 - User profile: Allow Admins to change user email addresses
