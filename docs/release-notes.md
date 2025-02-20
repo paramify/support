@@ -24,6 +24,32 @@ Once the release notes are approved and merged then notification should be sent 
 
 ![paramify](/assets/hero-rocket.png)
 
+## 1.48.0 (February 14, 2024)
+
+### Improvements
+
+- Alpha Evidence: Various improvements
+- Alpha POA&Ms: Various improvements
+- Collaborator Permissions: Enhanced collaborator permissions to restrict view and edit access to only the Risk Solutions they own or are associated with
+- CMMC: Various additions to populate SSP with more accuracy and completion
+- Control Implementations: Added additional flag to highlight parameter settings that might be appropriate for selected impact level
+- Custom Responses: Modified response structure to include ability to create a Paired Custom Response with both Provider and End User responsibility narratives; Additionally, the system and end user narrative are included in the CRM when appropriate
+- Flags: Enhanced ability to remove blue-colored flags by marking them as reviewed
+- Flags: Added additional flags to highlight elements with issues that require attention
+- Information Types: Removed deprecated “Information Types received” field as this data is not added to the data elements
+- Risk Solution: Added ability to find and replace across for selected Risk Solutions
+
+### Fixes
+
+- Elements: Fixed issue with Element short name not saving in some instances
+- Risk Solutions: Fixed issue with Risk Solution mentions breaking after navigating between Risk Solutions
+
+
+### Security
+
+This release includes security-related dependency updates. Updating is recommended for all users.
+
+
 ## 1.47.0 (January 30, 2024)
 
 ### Improvements
@@ -42,7 +68,7 @@ Once the release notes are approved and merged then notification should be sent 
 - Alpha Evidence: Various bug fixes
 - Alpha POA&Ms: Various bug fixes
 - CIS-CRM: Fixed issue where control enhancement was not always appearing
-- Generate Suggested Risk Solutions: Various fixes 
+- Generate Suggested Risk Solutions: Various fixes
 - Risk Solutions: Fixed navigation issue
 - Smart Text Tool Tip: Fixed issue where captions were incorrectly marked as “not set”
 - User Summary: Fixed issue with manual and auto mode
@@ -50,6 +76,7 @@ Once the release notes are approved and merged then notification should be sent 
 ### Security
 
 This release includes security-related dependency updates. Updating is recommended for all users.
+
 
 ## 1.46.0 (January 17, 2024)
 
@@ -65,6 +92,7 @@ This release includes security-related dependency updates. Updating is recommend
 - Flags: Fixed various issues with flag management
 - Merge Request and Pull Requests
 - User Summary: Fixed issue with manual and auto mode
+
 
 ## 1.45.0 (January 8, 2024)
 
@@ -96,6 +124,7 @@ This release includes security-related dependency updates. Updating is recommend
 ### Security
 
 This release includes security-related dependency updates. Updating is recommended for all users.
+
 
 ## 1.44.0 (December 12, 2024)
 
@@ -138,6 +167,7 @@ This release includes security-related dependency updates. Updating is recommend
 
 This release includes security-related dependency updates. Updating is recommended for all users.
 
+
 ## 1.43.0 (November 25, 2024)
 
 ### Improvements
@@ -172,7 +202,6 @@ This release includes security-related dependency updates. Updating is recommend
 - This release includes security-related dependency updates. Updating is recommended for all users.
 
 
-
 ## 1.42.0 (November 7, 2024)
 
 ### Improvements
@@ -180,7 +209,7 @@ This release includes security-related dependency updates. Updating is recommend
 - Bulk Action: Added confirmation when bulk actions were completed successfully
 - Data Flows: Allow more flexibility for source and destination components
 - Documents: Evidence files are now included with POA&M package
-- Issues: Added ability with Document Robot to generate a folder containing relevant evidence when producing POA&M documentation 
+- Issues: Added ability with Document Robot to generate a folder containing relevant evidence when producing POA&M documentation
 - Navigation: Various improvements to reduce number of clicks throughout the app
 - Risk Solutions: Added the ability to bulk change team, origination, main component, implementation, target date, remarks
 
@@ -201,7 +230,7 @@ This release includes security-related dependency updates. Updating is recommend
 ### Improvements
 
 - Controls: Implemented page load performance improvements
-- Controls: Added flag to identify controls with invalid mentions 
+- Controls: Added flag to identify controls with invalid mentions
 - Controls: Added ‘Apply suggested Risk Solution to selected controls’ bulk action
 - Data Flows: Added option for data flow import and export
 - Documents: Add auto increment of version number to document generation through Document Robot
@@ -223,7 +252,7 @@ This release includes security-related dependency updates. Updating is recommend
 - POAMs: Fixed various formatting issues
 - Risk Solutions: Removed unnecessary project-mappings columns
 - Risk Solutions: Fixed prompt that suggested creating a duplicate main component
-- Risk Solutions: Fixed filter counts to always show the count and total 
+- Risk Solutions: Fixed filter counts to always show the count and total
 
 ### Deployment
 
@@ -252,7 +281,7 @@ This release includes security-related dependency updates. Updating is recommend
 - Documents: Fixed CIS to list by control requirement instead of by control
 - Documents: Fixed “Organization Name” mentions not being display properly
 - Documents: Fixed some attachments not being properly listed
-- Workspace Settings: Okta tooltip now points to up to date documentation in http://docs.paramify.com 
+- Workspace Settings: Okta tooltip now points to up to date documentation in http://docs.paramify.com
 - Project Overview: Corrected issue causing user summary to log too many interactions
 - Project Overview: System Interconnection names no longer display the 'invalid type' tooltip on hover
 - Project Overview: Fixed issue preventing access of “System Ports, Protocols & Services” page
