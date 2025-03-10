@@ -24,7 +24,7 @@ Once the release notes are approved and merged then notification should be sent 
 
 ![paramify](/assets/hero-rocket.png)
 
-## 1.48.0 (February 14, 2024)
+## 1.48.0 (February 14, 2025)
 
 ### Improvements
 
@@ -50,7 +50,7 @@ Once the release notes are approved and merged then notification should be sent 
 This release includes security-related dependency updates. Updating is recommended for all users.
 
 
-## 1.47.0 (January 30, 2024)
+## 1.47.0 (January 30, 2025)
 
 ### Improvements
 
@@ -78,7 +78,7 @@ This release includes security-related dependency updates. Updating is recommend
 This release includes security-related dependency updates. Updating is recommended for all users.
 
 
-## 1.46.0 (January 17, 2024)
+## 1.46.0 (January 17, 2025)
 
 ### Improvements
 
@@ -94,7 +94,7 @@ This release includes security-related dependency updates. Updating is recommend
 - User Summary: Fixed issue with manual and auto mode
 
 
-## 1.45.0 (January 8, 2024)
+## 1.45.0 (January 8, 2025)
 
 ### Improvements
 
