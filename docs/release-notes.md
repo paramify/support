@@ -1,3 +1,10 @@
+<meta http-equiv="refresh" content="0; URL=https://support.paramify.com/hc/en-us/categories/33962898626707-Release-Notes" />
+<link rel="canonical" href="https://support.paramify.com/hc/en-us/categories/33962898626707-Release-Notes" />
+
+:::tip NOTE
+This docs.paramify.com is being replaced! Find our current documentation at support.paramify.com, including the latest [Release Notes](https://support.paramify.com/hc/en-us/categories/33962898626707-Release-Notes).
+:::
+
 ---
 outline: 2
 ---
