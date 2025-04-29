@@ -1,13 +1,13 @@
-<meta http-equiv="refresh" content="0; URL=https://support.paramify.com/hc/en-us/categories/33962898626707-Release-Notes" />
-<link rel="canonical" href="https://support.paramify.com/hc/en-us/categories/33962898626707-Release-Notes" />
-
-:::tip NOTE
-This docs.paramify.com is being replaced! Find our current documentation at support.paramify.com, including the latest [Release Notes](https://support.paramify.com/hc/en-us/categories/33962898626707-Release-Notes).
-:::
-
 ---
 outline: 2
 ---
+
+<meta http-equiv="refresh" content="0; URL=https://support.paramify.com/hc/en-us/categories/33962898626707-Release-Notes" />
+<link rel="canonical" href="https://support.paramify.com/hc/en-us/categories/33962898626707-Release-Notes" />
+
+:::info
+This docs.paramify.com is being replaced! Find our current documentation at support.paramify.com, including the latest [Release Notes](https://support.paramify.com/hc/en-us/categories/33962898626707-Release-Notes).
+:::
 
 <!--
 For each release create a new section at the top with heading including the version that clients would see in the app (i.e., 1.18.0) and release date, followed by subsections (if applicable) for:
