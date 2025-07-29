@@ -56,7 +56,7 @@ apps:
     containers:
       admission:
         env:
-        - name: WHITELISTED_REGISTRIES
+        - name: WHITELISTED_REGISTRIES  # Comma-separated list of whitelisted registries for image validation
           value: "registry.paramify.com,proxy.paramify.com,ghcr.io,cgr.dev,kotsadm,minio,rqlite,openebs,602401143452.dkr.ecr.us-west-2.amazonaws.com"  # update the AWS domain for your region from https://docs.aws.amazon.com/eks/latest/userguide/add-ons-images.html
 #         # For Helm airgap replace the images with your internal registry (and add your registry in the registries list above)
 #         image:
@@ -92,36 +92,42 @@ apps:
 configmaps:
   paramify:
     data:
-      AUTH_SMTP_ENABLED: "true"
-      SMTP_ENABLED: "true"
-      SMTP_FROM: "Paramify <noreply@mycompany.com>"
-      SMTP_HOST: "<smtp_host>"
-      SMTP_PORT: "465"
-      SMTP_USER: "mail@mycompany.com"
-      ADMIN_EMAIL: "user@mycompany.com"
-      APP_BASE_URL: "https://paramify.mycompany.com"  # if DNS is set on LB then match here (e.g., "https://paramify.mycompany.com")
-      AUTH_GOOGLE_ENABLED: "false"
-      AUTH_GOOGLE_CLIENT_ID: "<guid>.apps.googleusercontent.com"
-      AUTH_MICROSOFT_ENABLED: "false"
-      AUTH_MICROSOFT_CLIENT_ID: "<guid>"
-      AUTH_OKTA_ENABLED: "false"
-      AUTH_OKTA_DOMAIN: "<id>.okta.com"
-      AUTH_OKTA_CLIENT_ID: "<guid>"
-      AWS_STORAGE_BUCKET_NAME: "paramify-mycompany-s3"
-      AWS_REGION: "<region>"
+      ADMIN_EMAIL: "admin@invalid.mail"  # Comma-delimited list of admin users to create on startup
+      APP_BASE_URL: "https://paramify"  # The base URL of the Paramify application (e.g., https://paramify.mycompany.com)
+      DOCUMENT_ROBOT_BASE_URL: "https://document-robot"  # The internal URL of the Document Robot application (rarely changed)
+      AUTH_SMTP_ENABLED: "false"  # Set to true to enable authentication via SMTP email
+      AUTH_GOOGLE_ENABLED: "false"  # Set to true to enable authentication via Google
+      AUTH_GOOGLE_CLIENT_ID: "google_client_id"  # The client ID for Google authentication
+      AUTH_MICROSOFT_ENABLED: "false"  # Set to true to enable authentication via Microsoft
+      AUTH_MICROSOFT_CLIENT_ID: "microsoft_client_id"  # The client ID for Microsoft authentication
+      AUTH_MICROSOFT_TRUST_AD_EMAIL: "true"  # Set to true to trust AD email for Microsoft authentication ()
+      AUTH_MICROSOFT_GOVCLOUD: "false"  # Set to true when using Microsoft Government Cloud
+      AUTH_OKTA_ENABLED: "false"  # Set to true to enable authentication via Okta
+      AUTH_OKTA_DOMAIN: "okta_domain"  # The Okta domain (e.g., mycompany.okta.com)
+      AUTH_OKTA_CLIENT_ID: "okta_client_id"  # The client ID for Okta authentication
+      AWS_REGION: "<region>"  # AWS region
+      AWS_STORAGE_BUCKET_NAME: "paramify-company-s3"  # Name of the AWS S3 bucket for storage
+      AWS_USE_FIPS_ENDPOINT: "false"  # Set to true to use FIPS endpoints for AWS S3
+      SMTP_ENABLED: "false"  # Set to true to enable sending email via SMTP
+      SMTP_FROM: "user@invalid.mail"  # "From" email address in emails sent by Paramify
+      SMTP_HOST: "localhost"  # Hostname of the SMTP server
+      SMTP_PORT: "465"  # Port of the SMTP server
+      SMTP_USER: "user@invalid.mail"  # Username for the SMTP server
   document-robot:
     data:
       STORAGE_PROVIDER: "AWSS3"
-      AWS_S3_BUCKET: "paramify-mycompany-s3"
-      AWS_REGION: "<region>"
+      AWS_S3_BUCKET: "paramify-mycompany-s3"  # Name of the AWS S3 bucket for Document Robot
+      AWS_REGION: "<region>"  # AWS region
 
 secrets:
   paramify:
     data:
-      AUTH_GOOGLE_CLIENT_SECRET: "<secret>"
-      AUTH_MICROSOFT_CLIENT_SECRET: "<secret>"
-      AUTH_OKTA_CLIENT_SECRET: "<secret>"
-      SMTP_PASSWORD: "<secret>"
+      AUTH_GOOGLE_CLIENT_SECRET: secret  # Client secret for Google authentication
+      AUTH_MICROSOFT_CLIENT_SECRET: secret  # Client secret for Microsoft authentication
+      AUTH_OKTA_CLIENT_SECRET: secret  # Client secret for Okta authentication
+      MAGIC_LINK_SECRET: secret  # Secret key for email-based magic link authentication
+      SESSION_SECRET: secret  # Secret key for session management
+      SMTP_PASSWORD: password  # Password for SMTP server (if SMTP is enabled)
 
 serviceAccounts:
   paramify:
@@ -131,14 +137,14 @@ serviceAccounts:
 paramify:
   admission:
     enabled: false  # optionally enable for admission webhook preventing unknown image sources
-  #postgresPassword: "<password>"  # password for container db (not recommended)
+  #postgresPassword: "<password>"  # password for container-based embedded PostgreSQL db (not recommended)
   externalPostgresql:
-    enabled: true
-    username: "paramify"
-    database: "paramify"
-    password: "<password>"
-    host: "paramify-mycompany-db.<guid>.<region>.rds.amazonaws.com"  # replace with your db url
-    port: "5432"
+    enabled: true  # Set to true (recommended) to use an external PostgreSQL database instead of embedded
+    username: "paramify"  # Username for the external PostgreSQL database
+    database: "paramify"  # Database name for the external PostgreSQL database
+    password: "password"  # Password for the external PostgreSQL database
+    host: "paramify-mycompany-db.<guid>.<region>.rds.amazonaws.com"  # Hostname of the external PostgreSQL database
+    port: 5432  # Port of the external PostgreSQL database
   pgbackup:
-    enabled: false  # automated daily backup for container db (recommended if using container db)
+    enabled: false  # automated daily backup for container db (recommended if using embedded PostreSQL db)
 
