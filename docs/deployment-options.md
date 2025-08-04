@@ -27,9 +27,10 @@ If you want to deploy Paramify into an existing Kubernetes cluster you can use e
 
 * The **Paramify Platform Installer** is a GUI-based admin console which supports easy configuration and lifecycle management, including deploying and upgrading the Paramify application.
   * See [Paramify Platform Installer](ppi) for details on how to setup the GUI and then deploy Paramify.
-  * For a more detailed example of standing up an EKS cluster in AWS and then deploying Paramify into it you could follow the instructions at [AWS EKS via PPI](deploy-eks-aws).
+  * For a more detailed example of standing up an EKS cluster in AWS and then deploying Paramify into it you could follow the instructions at [AWS EKS via PPI](deploy-ppi-eks).
 * **Helm** is a commonly used CLI method of configuring and installing an application into a Kubernetes cluster.
   * See [Azure AKS via Helm](deploy-helm-azure) for an example of creating an AKS cluster with Terraform and deploying Paramify via Helm.
+  * [AWS EKS via Helm](deploy-helm-aws) has an example of creating an EKS cluster with Terraform and deploying Paramify via Helm.
 
 ### Embedded Cluster
 An embedded cluster is a single-node solution which can be more easily managed, but is not as resilient or scalable as a full Kubernetes cluster.

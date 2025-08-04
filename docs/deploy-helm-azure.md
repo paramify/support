@@ -21,7 +21,7 @@ You'll need to configure at least one authentication method (e.g., SMTP, Google,
 ## 1. Create Infrastructure
 Paramify will use the following infrastructure in Azure:
 - AKS Kubernetes cluster
-- PostgreSQL database (this example uses an embedded DB container, so refer to [Embedded Postgres Backup](embedded-db-backup) for info on backups, but optionally you could use a managed solution like Azure Database for PostgreSQL, etc.)
+- PostgreSQL database (this example uses an embedded DB container, so refer to [Embedded Postgres Backup](embedded-db-backup) for info on backups. Preferably you could use a managed solution like Azure Database for PostgreSQL, with an example in [Embedded in Azure](deploy-embedded-azure).)
 - Azure Storage account and container for images and generated documentation
 - Load balancer to access to the Paramify application
 

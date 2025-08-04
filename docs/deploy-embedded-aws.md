@@ -25,7 +25,7 @@ Paramify will use the following infrastructure in AWS:
 - S3 bucket for generated documentation
 - Load balancer to access installer and application
 
-To simplify creation of the infrastructure you can use the example Terraform file [aws-paramify-embedded-infra.tf](https://github.com/paramify/support/blob/main/aws/aws-paramify-embedded-infra.tf) to create everything in an isolated VPC. Be sure to update the variables at the top of the file according to your environment.
+To simplify creation of the infrastructure you can use the example Terraform file [aws-paramify-embedded-infra.tf](https://github.com/paramify/support/blob/main/aws_embed/aws-paramify-embedded-infra.tf) to create everything in an isolated VPC. Be sure to update the variables at the top of the file according to your environment.
 
 Follow these steps to create the infrastructure:
 1. Create an AWS SSL certificate for the desired subdomain (e.g., paramify.company.com)
