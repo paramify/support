@@ -86,7 +86,8 @@ export default defineConfig({
             text: "Installation Examples",
             collapsed: true,
             items: [
-              { text: "AWS EKS via PPI", link: "/deploy-eks-aws" },
+              { text: "AWS EKS via PPI", link: "/deploy-ppi-eks" },
+              { text: "AWS EKS via Helm", link: "/deploy-helm-aws" },
               { text: "Azure AKS via Helm", link: "/deploy-helm-azure" },
               { text: "Embedded in AWS", link: "/deploy-embedded-aws" },
               { text: "Embedded in Azure", link: "/deploy-embedded-azure" },
