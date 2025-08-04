@@ -39,7 +39,7 @@ Follow these steps to create the infrastructure:
     terraform init
     terraform plan
     ```
-    - Apply the configuration to create AWS resources:
+    - Apply the configuration to create Azure resources:
     ```bash
     terraform apply
     ```
