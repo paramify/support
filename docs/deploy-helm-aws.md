@@ -51,9 +51,9 @@ Follow these steps to create the infrastructure:
     s3_bucket = "paramify-mycompany-s3"
     s3_role = "arn:aws:iam::abc123abc123:role/paramify-mycompany-eks-sa-role"
     ```
-3. Add the EKS cluster config to kubectl (using the `cluster_name` from the Terraform output above)
+3. Add the EKS cluster config to kubectl (using the `cluster_name` from the Terraform output above), including `--profile <sso_profile>` if not using `default`
     ```
-    aws eks update-kubeconfig --region us-west-2 --name paramify-mycompany-eks
+    aws eks update-kubeconfig --region us-west-2 --name paramify-mycompany-eks --profile admin
     ```
 
 ## 2. Helm Install
