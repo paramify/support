@@ -289,8 +289,8 @@ resource "aws_db_instance" "paramify_eks_db" {
   engine                 = "postgres"
   engine_version         = "16.9"
   instance_class         = "db.t3.micro"
-  db_name                = "postgres"
-  username               = "postgres"
+  db_name                = "paramify"
+  username               = "paramify"
   password               = "${var.db_password}"
   port                   = "${var.db_port}"
   vpc_security_group_ids = [aws_security_group.paramify_eks_db_sg.id]

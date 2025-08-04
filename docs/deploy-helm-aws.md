@@ -55,6 +55,10 @@ Follow these steps to create the infrastructure:
     ```
     aws eks update-kubeconfig --region us-west-2 --name paramify-mycompany-eks --profile admin
     ```
+4. Create the desired namespace to deploy the Paramify application (e.g., `paramify`)
+    ```
+    kubectl create ns paramify
+    ```
 
 ## 2. Helm Install
 Follow these steps to install the application using Helm:
