@@ -634,5 +634,9 @@ resource "aws_eks_addon" "paramify_eks_vpccni" {
 
   configuration_values = jsonencode({ "enableNetworkPolicy" = "true" })
 
+  lifecycle {
+    ignore_changes = [addon_version]
+  }
+
   depends_on = [aws_eks_node_group.paramify_eks_node_group]
 }
