@@ -6,7 +6,7 @@
 The following instructions are an example of how to create and deploy into an AWS EKS cluster leveraging an IAM role (attached to a ServiceAccount) for permissions to read/write from S3 Storage. Other than the specific Terraform the overall process is generally applicable for any Helm-based install of Paramify into Kubernetes.
 
 ## Prerequisites
-- AWS CLI and authenticated user with sufficient permissions to create resources
+- AWS CLI and authenticated user (and profile) with sufficient permissions to create resources
 - [terraform](https://www.terraform.io/) CLI installed (if using the example .tf files)
 - [kubectl](https://kubernetes.io/docs/reference/kubectl/) CLI installed
 - A Paramify license (user and credential for Helm registry login)
@@ -51,7 +51,7 @@ Follow these steps to create the infrastructure:
     s3_bucket = "paramify-mycompany-s3"
     s3_role = "arn:aws:iam::abc123abc123:role/paramify-mycompany-eks-sa-role"
     ```
-3. Add the EKS cluster config to kubectl (using the `cluster_name` from the Terraform output above), including `--profile <sso_profile>` if not using `default`
+3. Add the EKS cluster config to kubectl (using the `region` and `cluster_name` from the Terraform output above), optionally including `--profile <sso_profile>` if not using `default`
     ```
     aws eks update-kubeconfig --region us-west-2 --name paramify-mycompany-eks --profile admin
     ```
