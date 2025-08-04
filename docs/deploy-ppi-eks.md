@@ -1,5 +1,5 @@
-# Deploy to an EKS Cluster in AWS
-> Paramify can be deployed into an Elastic Kubernetes Service (EKS) cluster in AWS.
+# Deploy using Installer to AWS EKS
+> Paramify can be deployed using the Paramify Platform Installer into an existing Kubernetes cluster, such as AWS EKS, Azure AKS, or self-managed.
 
 The following instructions are an example of how to deploy the infrastructure and application into AWS EKS.
 
