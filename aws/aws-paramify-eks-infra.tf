@@ -50,7 +50,7 @@ variable "aws_prefix" {
 
 variable "k8s_version" {
   description = "Kubernetes version to use for the EKS cluster."
-  default     = "1.28"
+  default     = "1.31"
 }
 
 
@@ -287,7 +287,7 @@ resource "aws_db_instance" "paramify_eks_db" {
   allocated_storage      = 20
   storage_type           = "gp3"
   engine                 = "postgres"
-  engine_version         = "15.4"
+  engine_version         = "16.9"
   instance_class         = "db.t3.micro"
   db_name                = "postgres"
   username               = "postgres"
@@ -296,6 +296,10 @@ resource "aws_db_instance" "paramify_eks_db" {
   vpc_security_group_ids = [aws_security_group.paramify_eks_db_sg.id]
   db_subnet_group_name   = aws_db_subnet_group.paramify_eks_db_subnet_group.name
   skip_final_snapshot    = true
+
+  lifecycle {
+    ignore_changes = [engine_version]
+  }
 }
 
 resource "aws_db_subnet_group" "paramify_eks_db_subnet_group" {
@@ -556,6 +560,10 @@ resource "aws_eks_cluster" "paramify_eks_cluster" {
     subnet_ids               = [aws_subnet.paramify_eks_private1.id, aws_subnet.paramify_eks_private2.id]
     security_group_ids       = [aws_security_group.paramify_eks_app_sg.id]
     public_access_cidrs      = var.allowed_ips
+  }
+
+  lifecycle {
+    ignore_changes = [version]
   }
 
   depends_on = [ aws_iam_role.paramify_eks_cluster_role ]
