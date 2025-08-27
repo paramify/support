@@ -1,0 +1,100 @@
+# Paramify configuration
+#
+# Example install:
+#   helm registry login registry.paramify.com --username paramify@mycompany.com --password <license_id>
+#   helm install paramify oci://registry.paramify.com/paramify/paramify --namespace paramify --values ~/values-gke.yaml
+
+# Paramify main application endpoint (recommend DNS entry and custom SSL cert (see below))
+services:
+  paramify:
+    type: LoadBalancer # optionally ClusterIP or NodePort
+    annotations:
+      service.beta.kubernetes.io/load-balancer-source-ranges: "0.0.0.0/0" # Allowed source IP addresses
+    ports:
+      http:
+        nodePort: null # set preferred port (30000-32767) or null to autoassign
+        port: 443
+
+#ingresses:
+#  paramify:
+#    enabled: true
+#    ingressClassName: "nginx"
+#    annotations:
+#      kubernetes.io/ingress.class: "nginx"
+
+apps:
+  admission:
+    containers:
+      admission:
+        env:
+        - name: WHITELISTED_REGISTRIES
+          value: registry.paramify.com,proxy.paramify.com,proxy.replicated.com,ghcr.io,cgr.dev,kotsadm,minio,rqlite,openebs,us-west3-artifactregistry.gcr.io/gke-release
+# Optionally reference secret with custom SSL cert (data with tls.key/tls.cert)
+#   paramify:
+#     volumes:
+#     - name: paramify-secrets
+#       secret:
+#         secretName: paramify-custom-tls
+
+# Custom environment configuration (replace <val> entries)
+configmaps:
+  paramify:
+    data:
+      SMTP_ENABLED: "false"  # Set to true to enable sending email via SMTP
+      SMTP_FROM: "user@mycompany.com"  # "From" email address in emails sent by Paramify
+      SMTP_HOST: "localhost"  # Hostname of the SMTP server
+      SMTP_PORT: "465"  # Port of the SMTP server
+      SMTP_USER: "user@mycompany.com"  # Username for the SMTP server
+      ADMIN_EMAIL: "admin@mycompany.com"  # Comma-delimited list of initial admin users to create on startup
+      APP_BASE_URL: "https://paramify.mycompany.com"  # Base URL of the Paramify application (e.g., https://paramify.mycompany.com)
+      DOCUMENT_ROBOT_BASE_URL: "https://document-robot"  # Internal URL of the Document Robot application (rarely changed)
+      AUTH_SMTP_ENABLED: "true"  # Set to true to enable authentication via SMTP email
+      AUTH_GOOGLE_ENABLED: "true"  # Set to true to enable authentication via Google
+      AUTH_GOOGLE_CLIENT_ID: "google_client_id"  # The client ID for Google authentication
+      AUTH_MICROSOFT_ENABLED: "false"  # Set to true to enable authentication via Microsoft
+      AUTH_MICROSOFT_CLIENT_ID: "microsoft_client_id"  # The client ID for Microsoft authentication
+      AUTH_MICROSOFT_TRUST_AD_EMAIL: "false"  # Set to true to trust AD email for Microsoft authentication (email may be unverified)
+      AUTH_MICROSOFT_GOVCLOUD: "false"  # Set to true when using Microsoft Government Cloud
+      AUTH_OKTA_ENABLED: "false"  # Set to true to enable authentication via Okta
+      AUTH_OKTA_DOMAIN: "okta_domain"  # Okta domain (e.g., mycompany.okta.com)
+      AUTH_OKTA_CLIENT_ID: "okta_client_id"  # Client ID for Okta authentication
+      AWS_STORAGE_BUCKET_NAME: ""  # Name of the AWS S3 bucket for storage (blank for Azure/Google)
+      AWS_USE_FIPS_ENDPOINT: "false"  # Set to true to use FIPS endpoints for AWS S3
+      AZURE_STORAGE_ACCOUNT: ""  # Azure Storage account name (blank for Google)
+      AZURE_STORAGE_CONTAINER_NAME: ""  # Azure Storage container name (blank for Google)
+      AZURE_STORAGE_ENDPOINT: ""  # Azure Storage blob endpoint (defaults to Azure commercial, required to set for Azure Government, i.e. https://paramify-mycompany.blob.core.usgovcloudapi.net/)
+      GOOGLE_CLOUD_STORAGE_BUCKET: "paramify-gke-bucket"  # Google Cloud Storage bucket name
+      NODE_OPTIONS: "--max-old-space-size=3072"  # Node.js memory limit or other options
+      STORAGE_PROVIDER: "GoogleCloudStorage"
+  document-robot:
+    data:
+      STORAGE_PROVIDER: "GoogleCloudStorage"
+      GOOGLE_CLOUD_STORAGE_BUCKET: "paramify-gke-bucket"  # Google Cloud Storage bucket name
+
+secrets:
+  paramify:
+    data:
+      AUTH_GOOGLE_CLIENT_SECRET: secret  # Client secret for Google authentication
+      AUTH_MICROSOFT_CLIENT_SECRET: secret  # Client secret for Microsoft authentication
+      AUTH_OKTA_CLIENT_SECRET: secret  # Client secret for Okta authentication
+      MAGIC_LINK_SECRET: secret  # Secret key for email-based magic link authentication
+      SESSION_SECRET: secret  # Secret key for session management
+      SMTP_PASSWORD: password  # Password for SMTP server (if SMTP is enabled)
+
+serviceAccounts:
+  paramify:
+    annotations:
+      iam.gke.io/gcp-service-account: paramify-gke-sa@paramify-mycompany-gke.iam.gserviceaccount.com
+
+paramify:
+  admission:
+    enabled: true
+  externalPostgresql:
+    enabled: true
+    host: "192.168.0.1" # IP of the Postgres database
+    port: "5432"
+    database: "paramify"
+    username: "paramify"
+    password: "password" # Password to the Postgres database
+  pgbackup:
+    enabled: false
