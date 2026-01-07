@@ -7,7 +7,7 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", href: "/favicon.svg" }],
     ["link", { rel: "canonical", href: "https://support.paramify.com" }],
-    ["meta", { http-equiv: "refresh", content: "0; URL=https://support.paramify.com/hc/en-us" }],
+    ["meta", { "http-equiv": "refresh", content: "0; URL=https://support.paramify.com/hc/en-us" }],
     [
       "script",
       { id: "hotjar" },
