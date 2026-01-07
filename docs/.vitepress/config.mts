@@ -6,7 +6,7 @@ export default defineConfig({
   description: "Compliance docs made easier",
   head: [
     ["link", { rel: "icon", href: "/favicon.svg" }],
-    ["link": { rel: "canonical", href: "https://support.paramify.com" }],
+    ["link", { rel: "canonical", href: "https://support.paramify.com" }],
     ["meta", { http-equiv: "refresh", content: "0; URL=https://support.paramify.com/hc/en-us" }],
     [
       "script",
