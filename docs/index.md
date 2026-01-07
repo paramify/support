@@ -37,3 +37,11 @@ features:
     link: "/deployment-options"
     linkText: Browse installation options
 ---
+
+<meta http-equiv="refresh" content="0; URL=https://support.paramify.com/hc/en-us" />
+<link rel="canonical" href="https://support.paramify.com" />
+
+:::info
+This docs.paramify.com is being replaced! Find our current documentation at support.paramify.com.
+:::
+
