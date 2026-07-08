@@ -113,6 +113,7 @@ configmaps:
       SMTP_HOST: "localhost"  # Hostname of the SMTP server
       SMTP_PORT: "465"  # Port of the SMTP server
       SMTP_USER: "user@invalid.mail"  # Username for the SMTP server
+      AUTH_SAML_ENABLED: "false"  # Enable SAML authentication (along with cert/key in secrets)
   document-robot:
     data:
       STORAGE_PROVIDER: "AWSS3"
@@ -128,6 +129,12 @@ secrets:
       MAGIC_LINK_SECRET: secret  # Secret key for email-based magic link authentication
       SESSION_SECRET: secret  # Secret key for session management
       SMTP_PASSWORD: password  # Password for SMTP server (if SMTP is enabled)
+      SAML_CERT: |  # PEM-encoded certificate for SAML authentication
+        -----BEGIN CERTIFICATE-----
+        -----END CERTIFICATE-----
+      SAML_KEY: |  # PEM-encoded private key for SAML authentication
+        -----BEGIN PRIVATE KEY-----
+        -----END PRIVATE KEY-----
 
 serviceAccounts:
   paramify:
